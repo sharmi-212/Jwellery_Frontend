@@ -23,7 +23,7 @@ const AddBook = () => {
       };
       const sendRequest = async () => {
         await axios
-          .post("https://https://home-appliances-be.onrender.com/books", {
+          .post("https://jwellery-be.onrender.com/books", {
             name: String(input.name),
             idno: Number(input.idno),
             description: String(input.description),
