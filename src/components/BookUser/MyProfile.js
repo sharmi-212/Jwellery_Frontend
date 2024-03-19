@@ -13,7 +13,7 @@ const MyProfile = () => {
 
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`https://https://home-appliances-be.onrender.com/users`);
+        const response = await axios.get(`https://jwellery-be.onrender.com/users`);
         const userData = response.data;
 
         const filteredUser = userData.find((profile) => profile.email === emailID);
