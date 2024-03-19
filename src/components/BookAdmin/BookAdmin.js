@@ -9,7 +9,7 @@ const BookAdmin = (props) => {
     const {_id, name,idno, description, price, image} = props.book;
     const deleteHandler = async () => {
         await axios
-          .delete(`https://https://home-appliances-be.onrender.com/books/${_id}`)
+          .delete(`https://jwellery-be.onrender.com/books/${_id}`)
           .then((res) => res.data)
           .then(() => window.location.reload())
           .then(() => history("/books"));
