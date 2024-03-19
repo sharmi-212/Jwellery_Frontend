@@ -11,7 +11,7 @@ const UpdateBook = () => {
     useEffect(() => {
         const fetchHandler = async () => {
             await axios
-                .get(`https://https://home-appliances-be.onrender.com/books/${id}`)
+                .get(`https://jwellery-be.onrender.com/books/${id}`)
                 .then((res) => res.data)
                 .then((data) => setInputs(data.book));
         };
@@ -20,7 +20,7 @@ const UpdateBook = () => {
 
     const sendRequest = async () => {
         await axios
-            .put(`https://https://home-appliances-be.onrender.com/books/${id}`, {
+            .put(`https://jwellery-be.onrender.com/books/${id}`, {
                 name: String(inputs.name),
                 idno: String(inputs.idno),
                 description: String(inputs.description),
