@@ -22,7 +22,7 @@ const BookUser = (props) => {
   };
 
   const sendRequest = async () => {
-    await axios.put(`https://https://home-appliances-be.onrender.com/books/${_id}`, {
+    await axios.put(`https://jwellery-be.onrender.com/books/${_id}`, {
       name: String(name),
       idno: Number(idno),
       description: String(description),
